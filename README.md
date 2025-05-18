@@ -1,10 +1,115 @@
-# Admin Panel 
+# Admin Panel – MERN App
 
-### Home page (light)
-![admin home page pic](public/assets/img/admin1.png)
+A full‑stack **Admin Panel** built with the MERN stack (MongoDB, Express.js, React, Node.js). It lets administrators securely oversee live data for users, third‑party vendors, bookings, payments, and reviews.
+
+---
 
 ### Home page(dark)
 ![admin home page pic](public/assets/img/admin2.png)
+
+## ✨ Features
+
+| Domain                                                    | Capabilities                                         |
+| --------------------------------------------------------- | ---------------------------------------------------- |
+| **Auth**                                                  | • JWT‑based login/logout                             |
+| • Role‑based access control (admin only)                  |                                                      |
+| **User Management**                                       | • View paginated user list                           |
+| • Activate / deactivate an account                        |                                                      |
+| **Vendor Management**                                     | • Approve, suspend, or delete vendors                |
+| • See vendor profile & inventory                          |                                                      |
+| **Bookings**                                              | • Real‑time list & detail view                       |
+| • Change booking status (confirmed, cancelled, completed) |                                                      |
+| **Payments**                                              | • Dashboard with totals & filters                    |
+| • Inspect individual transactions                         |                                                      |
+| **Reviews**                                               | • Moderate or remove user reviews                    |
+| **Dashboard**                                             | • KPI widgets (total users, daily bookings, revenue) |
+| • Time‑series charts (react‑charts)                       |                                                      |
+| **Search & Filter**                                       | • Global search bar                                  |
+| • Column filters, date range picker                       |                                                      |
+| **Responsive UI**                                         | • Material‑UI v5 theme                               |
+| • Dark / light mode toggle                                |                                                      |
+
+---
+
+## 🏗️ Tech Stack
+
+* **Frontend:** React 18, React Router, Material‑UI, Axios, Recharts
+* **Backend:** Node.js 20, Express 4
+* **Database:** MongoDB Atlas
+* **Auth:** JSON Web Tokens (JWT), bcrypt
+* **State:** Redux Toolkit + RTK Query
+* **Testing:**  React Testing Library, postman
+* **Linting/Formatting:** ESLint (Airbnb), Prettier
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+* Node.js ≥ 18
+* npm or yarn
+* A MongoDB URI (local or Atlas)
+
+### 1. Clone the repo
+
+```bash
+ git clone https://github.com/manishmodi5555/Admin-Panel-Mern-App.git
+ cd admin‑panel
+```
+
+### 2. Configure env vars
+
+Create **.env** files at the project root and at `/server`:
+
+```dotenv
+# .env (client)
+VITE_API_BASE_URL=http://localhost:5000/api
+# .env (server)
+MONGO_URI=mongodb+srv://<user>:<pass>@cluster0.xyx.mongodb.net/app
+JWT_SECRET=supersecretkey
+PORT=5000
+```
+
+### 3. Install dependencies
+
+```bash
+# Root installs client deps via workspaces
+npm install
+
+# Install server deps
+cd server
+npm install
+```
+
+### 4. Seed sample data (optional)
+
+```bash
+npm run seed   # inside /server
+```
+
+### 5. Run the app
+
+```bash
+# Concurrently starts client (Vite) & server (nodemon)
+npm run dev       # at project root
+```
+
+
+
+
+## 🧪 Running Tests
+
+```bash
+# Client unit & integration tests
+npm run test  # inside /client
+
+# API tests
+npm run test  # inside /server
+``
+
+### Home page (light)
+![admin home page pic](public/assets/img/admin1.png)
 
 ### Admin manage Category 
 ![admin home page pic](public/assets/img/cat.png)
@@ -21,73 +126,4 @@
 ### Admin Manage Product  
 ![admin home page pic](public/assets/img/product.png)
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
