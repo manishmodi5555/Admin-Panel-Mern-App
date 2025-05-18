@@ -12,14 +12,14 @@
 ### Admin Manage Users
 ![admin home page pic](public/assets/img/user.png)
 
-### Home page 
-![admin home page pic](public/assets/img/admin1.png)
+### Admin Manage Vendors
+![admin home page pic](public/assets/img/vendor.png)
 
-### Home page 
-![admin home page pic](public/assets/img/admin1.png)
+### Admin Manage Payment 
+![admin home page pic](public/assets/img/payment.png)
 
-### Home page 
-![admin home page pic](public/assets/img/admin1.png)
+### Admin Manage Product  
+![admin home page pic](public/assets/img/product.png)
 
 # Getting Started with Create React App
 
