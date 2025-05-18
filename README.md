@@ -106,7 +106,7 @@ npm run test  # inside /client
 
 # API tests
 npm run test  # inside /server
-``
+```
 
 ### Home page (light)
 ![admin home page pic](public/assets/img/admin1.png)
