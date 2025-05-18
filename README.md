@@ -1,3 +1,9 @@
+# Admin Panel 
+
+### Home page 
+![admin home page pic](admin1.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
