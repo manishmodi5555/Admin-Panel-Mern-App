@@ -1,5 +1,23 @@
 # Admin Panel 
 
+### Home page (light)
+![admin home page pic](public/assets/img/admin1.png)
+
+### Home page(dark)
+![admin home page pic](public/assets/img/admin2.png)
+
+### Admin manage Category 
+![admin home page pic](public/assets/img/cat.png)
+
+### Admin Manage Users
+![admin home page pic](public/assets/img/user.png)
+
+### Home page 
+![admin home page pic](public/assets/img/admin1.png)
+
+### Home page 
+![admin home page pic](public/assets/img/admin1.png)
+
 ### Home page 
 ![admin home page pic](public/assets/img/admin1.png)
 
