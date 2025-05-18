@@ -1,7 +1,7 @@
 # Admin Panel 
 
 ### Home page 
-![admin home page pic](Admin-Panel-Mern-App/public/assets/img/admin1.png)
+![admin home page pic](public/assets/img/admin1.png)
 
 # Getting Started with Create React App
 
